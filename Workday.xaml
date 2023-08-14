@@ -1,0 +1,152 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1424,1011" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ubac="clr-namespace:UiPath.BAF.Activities.ContextModel;assembly=UiPath.Workday.Activities" xmlns:ubmr="clr-namespace:UiPath.BAF.Models.Response;assembly=UiPath.Workday" xmlns:ubt="clr-namespace:UiPath.BAF.Telemetry;assembly=UiPath.Workday" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uwa="clr-namespace:UiPath.Workday.Activities;assembly=UiPath.Workday.Activities" xmlns:uwm="clr-namespace:UiPath.Workday.Models;assembly=UiPath.Workday" xmlns:uws="clr-namespace:UiPath.Workday.ServiceFactory;assembly=UiPath.Workday" xmlns:uws1="clr-namespace:UiPath.Workday.Services;assembly=UiPath.Workday" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Workday.Models</x:String>
+      <x:String>UiPath.BAF.Models.Connection</x:String>
+      <x:String>UiPath.BAF.Telemetry</x:String>
+      <x:String>UiPath.BAF.Activities.ContextModel</x:String>
+      <x:String>UiPath.BAF.Models</x:String>
+      <x:String>UiPath.BAF.ServiceInterfaces</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Workday.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.BAF.Models.Response</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>UiPath.BAF.Models.Entity</x:String>
+      <x:String>UiPath.BAF.Models.CrudOperation</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Workday</AssemblyReference>
+      <AssemblyReference>UiPath.Workday.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Extensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.Unsafe</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="546,541" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="uwm:WorkdayConnection" Name="Connection" />
+      <Variable x:TypeArguments="ss:SecureString" Name="workdaypassword" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="ss:SecureString">[workdaypassword]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="ss:SecureString">[New System.Net.NetworkCredential(String.Empty,"Sid0101*").SecurePassword]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uwa:WorkdayScopeActivity ExistingConnection="{x:Null}" DisplayName="Workday Application Scope" sap:VirtualizedContainerService.HintSize="484,308" sap2010:WorkflowViewState.IdRef="WorkdayScopeActivity_1" Password="[workdaypassword]" TelemetryEnabled="False" Tenant="uipath" TenantUrl="https://wd5.myworkday.com/uipath" ThrowExceptionOnError="False" Username="ratheesh.ramadasan@uipath.com" WorkdayConnection="[Connection]">
+      <uwa:WorkdayScopeActivity.Body>
+        <ActivityAction x:TypeArguments="ubac:ScopeActivityContext">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ubac:ScopeActivityContext" Name="ScopeActivityContext" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,196" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ubmr:ResponseStatus" Name="Response" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Response]" />
+          </Sequence>
+        </ActivityAction>
+      </uwa:WorkdayScopeActivity.Body>
+      <uwa:WorkdayScopeActivity.DesignConnectionRequest>
+        <uwm:WorkdayAuthConnectionRequest ServerInstance="https://wd5.myworkday.com/uipath" Tenant="uipath" UserName="ratheesh.ramadasan@uipath.com">
+          <uwm:WorkdayAuthConnectionRequest.Password>
+            <ss:SecureString />
+          </uwm:WorkdayAuthConnectionRequest.Password>
+        </uwm:WorkdayAuthConnectionRequest>
+      </uwa:WorkdayScopeActivity.DesignConnectionRequest>
+      <uwa:WorkdayScopeActivity.ServiceFactory>
+        <uws:WorkdayServiceFactory BusinessEntityService="{x:Null}" SampleDataService="{x:Null}">
+          <uws:WorkdayServiceFactory.BusinessEntityExecuteService>
+            <uws1:WorkdayExecuteService />
+          </uws:WorkdayServiceFactory.BusinessEntityExecuteService>
+          <uws:WorkdayServiceFactory.ConnectionService>
+            <uws1:ConnectionService />
+          </uws:WorkdayServiceFactory.ConnectionService>
+          <uws:WorkdayServiceFactory.IntegrationsClient>
+            <uws:IntegrationsClient />
+          </uws:WorkdayServiceFactory.IntegrationsClient>
+          <uws:WorkdayServiceFactory.MetadataService>
+            <uws1:WorkdayMetadataService />
+          </uws:WorkdayServiceFactory.MetadataService>
+          <uws:WorkdayServiceFactory.QueryService>
+            <uws1:QueryService />
+          </uws:WorkdayServiceFactory.QueryService>
+          <uws:WorkdayServiceFactory.ReportService>
+            <uws1:ReportService />
+          </uws:WorkdayServiceFactory.ReportService>
+        </uws:WorkdayServiceFactory>
+      </uwa:WorkdayScopeActivity.ServiceFactory>
+      <uwa:WorkdayScopeActivity.TelemetryProperties>
+        <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+      </uwa:WorkdayScopeActivity.TelemetryProperties>
+    </uwa:WorkdayScopeActivity>
+  </Sequence>
+</Activity>
